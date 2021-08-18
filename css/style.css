@@ -771,6 +771,9 @@ input.form-footer__input::placeholder {
 .form-modal__label:not(:last-child) {
   margin-bottom: 10px;
 }
+.form-modal__label:nth-child(4) {
+  margin-bottom: 20px;
+}
 .form-modal__label span {
   display: block;
   margin-bottom: 4px;
@@ -807,7 +810,6 @@ input.form-footer__input::placeholder {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-  margin-bottom: 20px;
   transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__text::placeholder {
@@ -849,6 +851,7 @@ input.form-footer__input::placeholder {
   display: block;
   width: 16px;
   height: 15px;
+  cursor: pointer;
   background-image: url(../img/bd-check.svg);
   transition: background-image 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
