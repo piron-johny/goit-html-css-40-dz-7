@@ -8,9 +8,7 @@
 }
 body {
   margin: 0;
-
   color: var(--primaryColor);
-
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -119,7 +117,7 @@ img {
   display: block;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link-active::after {
+.nav__link--active::after {
   content: "";
 
   position: absolute;
@@ -133,7 +131,7 @@ img {
 }
 .nav__link:hover,
 .nav__link:focus,
-.nav__link-active,
+.nav__link--active,
 .address__location:hover,
 .contacts .contacts__item:hover,
 .contacts .contacts__item:focus,
@@ -446,37 +444,37 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 }
-.item {
+.content-list__item {
   margin: 15px;
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item:hover {
+.content-list__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.item:hover .wrapper::before,
-.item__link:focus .wrapper::before,
-.item:hover .wrapper > p,
-.item__link:focus .wrapper > p {
+.content-list__item:hover .wrapper-img::before,
+.content-list__link:focus .wrapper-img::before,
+.content-list__item:hover .wrapper-img > p,
+.content-list__link:focus .wrapper-img > p {
   opacity: 1;
   transform: translateY(0%);
   overflow: auto;
 }
-.item__link {
+.content-list__link {
   display: inline-block;
   position: relative;
 }
-.item__link:focus {
+.content-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.item__link .wrapper {
+.content-list__link .wrapper-img {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.item__link .wrapper::before {
+.content-list__link .wrapper-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -492,7 +490,7 @@ img {
   /* transition-property: opasity, transform; */
   transition: 0.25s linear;
 }
-.wrapper > p {
+.wrapper-img > p {
   position: absolute;
   top: 0;
   right: 0;
@@ -510,19 +508,19 @@ img {
   transition: 0.25s linear;
 }
 
-.item__wrapper {
+.wrapper-text {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.item__tittle {
+.content-list__tittle {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.item__text {
+.content-list__text {
   color: var(--secondaryColor);
 
   font-size: 16px;
@@ -868,3 +866,6 @@ input.form-footer__input::placeholder {
   border: 1px solid var(--activeColor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
+
