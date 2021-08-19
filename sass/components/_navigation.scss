@@ -1,0 +1,56 @@
+/* Навигация */
+.logo {
+  color: #000000;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  margin-right: 93px;
+  padding: 24px 0px;
+}
+.logo span {
+  color: var(--activeColor);
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__links {
+  display: flex;
+}
+.nav__links li:not(:last-child) {
+  margin-right: 50px;
+}
+.nav__link {
+  position: relative;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0px;
+  display: block;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link--active::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--active,
+.address__location:hover,
+.contacts .contacts__item:hover,
+.contacts .contacts__item:focus,
+.address__location:focus {
+  color: var(--activeColor);
+}

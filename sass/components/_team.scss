@@ -1,0 +1,68 @@
+/* --- team */
+
+.team {
+  background-color: var(--btnBg);
+  padding: 94px 0px;
+}
+.team__title {
+  margin-bottom: 50px;
+}
+.team__list {
+  display: flex;
+  margin: -15px;
+}
+.team__item {
+  text-align: center;
+  margin: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item .box {
+  padding: 30px 32px;
+  background-color: var(--colorText);
+}
+.team__subtitle {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.team__text {
+  color: var(--secondaryColor);
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-list__item a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__item a:hover,
+.social-list__item a:focus,
+.footer .social-list__item a:hover,
+.footer .social-list__item a:focus {
+  background-color: var(--activeColor);
+}
+.social-list__item svg {
+  fill: #afb1b8;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list .social-list__item a:hover svg,
+.social-link:focus svg {
+  fill: var(--colorText);
+}
+.clients-list {
+  display: flex;
+}

@@ -1,0 +1,196 @@
+/* --- form-footer */
+.footer__form {
+  margin-left: auto;
+}
+.form-footer {
+  display: flex;
+}
+.form-footer__field {
+  position: relative;
+}
+.form-footer__input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input:focus + label,
+.form-footer__input:not(:placeholder-shown) + label {
+  transform: translateY(30px);
+}
+.form-footer__input:focus-visible {
+  border-color: var(--activeColor);
+  outline: var(--activeColor);
+}
+.form-footer label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: transform 0.2s linear;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+input.form-footer__input::placeholder {
+  color: transparent;
+}
+.form-footer__btn,
+.form-modal__btn {
+  height: 50px;
+
+  margin-left: 12px;
+  padding: 0px 29px;
+}
+.form-footer__btn:hover,
+.form-footer__btn:focus,
+.form-modal__btn:hover,
+.form-modal__btn:focus {
+  color: var(--activeColor);
+  background-color: var(--btnBg);
+}
+.form-footer__btn .send {
+  fill: var(--colorText);
+  vertical-align: middle;
+  margin-left: 10px;
+
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-footer__btn:hover .send,
+.form-footer__btn:focus .send {
+  fill: var(--activeColor);
+}
+
+
+/* --- form-modal */
+
+.form-modal__input,
+.form-modal__label,
+.form-modal__btn {
+  display: block;
+}
+.modal strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--primaryColor);
+  margin-bottom: 12px;
+}
+.form-modal__label {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--secondaryColor);
+}
+.form-modal__label:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form-modal__label:nth-child(4) {
+  margin-bottom: 20px;
+}
+.form-modal__label span {
+  display: block;
+  margin-bottom: 4px;
+}
+.form-modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    outline 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__input:focus-visible + svg {
+  fill: var(--activeColor);
+}
+.form-modal__input:focus-visible,
+.form-modal__text:focus-visible {
+  border-color: var(--activeColor);
+  outline: var(--activeColor);
+}
+.icon-name,
+.icon-phone,
+.icon-mail {
+  position: absolute;
+  top: calc(50% + 4px);
+  left: 15px;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__text::placeholder {
+  font-size: 14px;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-modal__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-modal__checkbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.form-modal__checkbox:focus {
+  border: var(--activeColor);
+}
+.form-modal__field .form-modal__label {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.form-modal__field .form-modal__label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  display: block;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  background-image: url(../img/bd-check.svg);
+  transition: background-image 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-modal__field .form-modal__label a {
+  color: var(--activeColor);
+}
+.form-modal__checkbox:checked + .form-modal__label::before {
+  background-image: url(../img/icon-check.svg);
+}
+.form-modal__btn {
+  width: 200px;
+  margin: 0 auto;
+  box-shadow: none;
+}
+.form-modal__btn:hover,
+.form-modal__btn:active {
+  border: 1px solid var(--activeColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
