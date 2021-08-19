@@ -1,26 +1,40 @@
 /* Контакты */
+
 .contacts {
   display: flex;
   margin-left: auto;
 }
-.contacts__item {
-  color: var(--secondaryColor);
+.contacts__link {
+  @extend %link;
+  &:hover,
+  &:focus {
+    color: $activeColor;
+  }
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondaryColor;
   display: flex;
   align-items: center;
   padding: 32px 0;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts__item svg {
+.contacts__icon {
+  .contacts__item:hover &,
+  .contacts__link:focus & {
+    fill: $activeColor;
+  }
   margin-right: 10px;
-}
-.contacts li:last-child {
-  margin-left: 50px;
-}
-.header__contacts .contacts__item svg {
-  fill: var(--secondaryColor);
+  fill: $secondaryColor;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__contacts .contacts__item:hover svg,
-.header__contacts .contacts__item:focus svg {
-  fill: var(--activeColor);
+.contacts__item {
+  &:last-child {
+    margin-left: 50px;
+  }
 }
+// .contacts__icon {
+// }
+// .header__contacts .contacts__item:hover svg,
+// .header__contacts .contacts__item:focus svg {
+// }

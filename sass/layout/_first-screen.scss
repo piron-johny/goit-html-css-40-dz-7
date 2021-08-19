@@ -11,18 +11,19 @@
   height: 600px;
   max-width: 1600px;
   margin: 0 auto;
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
-.first-screen .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.wrapper {
+
+.first-screen__wrapper {
   width: 696px;
 }
 .first-screen__title {
-  color: var(--colorText);
+  color: $colorText;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -32,9 +33,6 @@
   margin-bottom: 30px;
 }
 .first-screen__btn {
+  @extend %btn;
   padding: 10px 32px;
-}
-.first-screen__btn:hover {
-  color: var(--activeColor);
-  background-color: var(--btnBg);
 }
