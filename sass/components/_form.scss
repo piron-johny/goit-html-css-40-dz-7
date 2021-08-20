@@ -1,11 +1,12 @@
 /* --- form-footer */
+
 .footer__form {
   margin-left: auto;
 }
 .form-footer {
   display: flex;
 }
-.form-footer__field {
+.form-footer__field-input {
   position: relative;
 }
 .form-footer__input {
@@ -20,16 +21,19 @@
   font-weight: 400;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+  &:focus-visible {
+    border-color: $activeColor;
+    outline: $activeColor;
+  }
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    transform: translateY(30px);
+  }
+  &::placeholder {
+    color: transparent;
+  }
 }
-.form-footer__input:focus + label,
-.form-footer__input:not(:placeholder-shown) + label {
-  transform: translateY(30px);
-}
-.form-footer__input:focus-visible {
-  border-color: var(--activeColor);
-  outline: var(--activeColor);
-}
-.form-footer label {
+.form-footer__label {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -40,35 +44,51 @@
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-input.form-footer__input::placeholder {
-  color: transparent;
-}
-.form-footer__btn,
-.form-modal__btn {
-  height: 50px;
+// .form-footer__input:focus + label,
+// .form-footer__input:not(:placeholder-shown) + label {
+//   transform: translateY(30px);
+// }
+// .form-footer__input:focus-visible {
+//   border-color: $activeColor;
+//   outline: $activeColor;
+// }
+// .form-footer label {
+//   position: absolute;
+//   top: 50%;
+//   left: 16px;
+//   transform: translateY(-50%);
+//   transition: transform 0.2s linear;
+
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: rgba(255, 255, 255, 0.6);
+// }
+// input.form-footer__input::placeholder {
+//   color: transparent;
+// }
+.form-footer__btn {
+  @extend %btn;
+  // height: 50px;
 
   margin-left: 12px;
-  padding: 0px 29px;
+  padding: 12px 29px;
 }
-.form-footer__btn:hover,
-.form-footer__btn:focus,
-.form-modal__btn:hover,
-.form-modal__btn:focus {
-  color: var(--activeColor);
-  background-color: var(--btnBg);
-}
-.form-footer__btn .send {
-  fill: var(--colorText);
+
+.form-footer__icon {
+  fill: $colorText;
   vertical-align: middle;
   margin-left: 10px;
 
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  .form-footer__btn:hover &,
+  .form-footer__btn:focus & {
+  fill: $activeColor;
 }
-.form-footer__btn:hover .send,
-.form-footer__btn:focus .send {
-  fill: var(--activeColor);
 }
-
+// .form-footer__btn:hover .send,
+// .form-footer__btn:focus .send {
+//   fill: $activeColor;
+// }
 
 /* --- form-modal */
 
@@ -82,14 +102,14 @@ input.form-footer__input::placeholder {
   font-size: 20px;
   line-height: 1.15;
   font-weight: 700;
-  color: var(--primaryColor);
+  color: $primaryColor;
   margin-bottom: 12px;
 }
 .form-modal__label {
   position: relative;
   font-size: 12px;
   line-height: 1.17;
-  color: var(--secondaryColor);
+  color: $secondaryColor;
 }
 .form-modal__label:not(:last-child) {
   margin-bottom: 10px;
@@ -111,12 +131,12 @@ input.form-footer__input::placeholder {
     outline 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__input:focus-visible + svg {
-  fill: var(--activeColor);
+  fill: $activeColor;
 }
 .form-modal__input:focus-visible,
 .form-modal__text:focus-visible {
-  border-color: var(--activeColor);
-  outline: var(--activeColor);
+  border-color: $activeColor;
+  outline: $activeColor;
 }
 .icon-name,
 .icon-phone,
@@ -159,7 +179,7 @@ input.form-footer__input::placeholder {
   overflow: hidden;
 }
 .form-modal__checkbox:focus {
-  border: var(--activeColor);
+  border: $activeColor;
 }
 .form-modal__field .form-modal__label {
   margin-left: 8px;
@@ -179,18 +199,21 @@ input.form-footer__input::placeholder {
   transition: background-image 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-modal__field .form-modal__label a {
-  color: var(--activeColor);
+  color: $activeColor;
 }
 .form-modal__checkbox:checked + .form-modal__label::before {
   background-image: url(../img/icon-check.svg);
 }
 .form-modal__btn {
+  @extend %btn;
+  padding: 10px 0;
   width: 200px;
   margin: 0 auto;
   box-shadow: none;
 }
+
 .form-modal__btn:hover,
 .form-modal__btn:active {
-  border: 1px solid var(--activeColor);
+  border: 1px solid $activeColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

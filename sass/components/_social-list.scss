@@ -22,7 +22,7 @@
   &:hover,
   &:focus,
   .footer &:hover,
-  .footer &:hover {
+  .footer &:focus {
     background-color: $activeColor;
   }
   .footer & {
@@ -37,7 +37,7 @@
     fill: $colorText;
   }
   .social-list__link:hover &,
-  .social-link:focus & {
+  .social-list__link:focus & {
     fill: $colorText;
   }
 }
