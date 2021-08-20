@@ -3,12 +3,14 @@
 @import './base/normalize';
 @import './base/null';
 @import './base/global-style';
+@import './components/logo';
 @import './components/navigation';
 @import './components/contacts';
 @import './components/modal';
 @import './components/form';
 @import './components/btn';
-@import './components/logo';
+@import './components/social-list';
+@import './components/address';
 @import './layout/header';
 @import './layout/first-screen';
 @import './layout/advantages';

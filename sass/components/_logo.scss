@@ -13,4 +13,10 @@
   & span {
     color: $activeColor;
   }
+  .footer & {
+    color: $colorText;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
 }

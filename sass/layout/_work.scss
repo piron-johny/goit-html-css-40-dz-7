@@ -5,6 +5,7 @@
   padding-bottom: 94px;
 }
 .work__title {
+  @extend %title__section;
   margin-bottom: 50px;
 }
 .work__list {
@@ -14,26 +15,29 @@
 .work__item {
   margin: 15px;
 }
-.work__item .box {
+.work__wrapper {
   position: relative;
   width: 100%;
   height: 100%;
+  & p {
+    position: absolute;
+    bottom: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $colorText;
+  
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-.work__item .box p {
-  position: absolute;
-  bottom: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--colorText);
-
-  width: 370px;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-}
+ 

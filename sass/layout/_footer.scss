@@ -1,66 +1,21 @@
 /* --- Footer */
 
 .footer {
-  background-color: var(--sectionBg);
+  background-color: $sectionBg;
   padding: 60px 0px;
 }
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-.footer .logo {
-  color: var(--colorText);
-  display: block;
-  margin-bottom: 20px;
-  padding: 0;
-}
+
 .footer__address {
   margin-right: 70px;
 }
-.address {
-  font-style: normal;
-}
-.address__location {
-  color: var(--colorText);
-  margin-bottom: 9px;
-  display: block;
-}
-.address .contacts {
-  display: inline;
-}
-.address .contacts li:first-child {
-  margin-bottom: 9px;
-}
-.address .contacts li:last-child {
-  margin-left: 0px;
-}
-.address .contacts__item {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  padding: 0;
-}
 
-// .address__location:hover,
-// .address__location:focus {
-  
-//color: $activeColor
-// }
-
-.footer__social p,
-.footer__form p {
+.footer__social-title,
+.footer__form-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
-  color: var(--colorText);
+  color: $colorText;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer .social-list__item svg {
-  fill: var(--colorText);
-}
-.footer .social-list__item a {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.footer .social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
+
