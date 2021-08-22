@@ -1,5 +1,6 @@
 
-@import './base/variables';
+@import './units/variables';
+@import './units/mixin';
 @import './base/normalize';
 @import './base/null';
 @import './base/global-style';
@@ -20,6 +21,8 @@
 @import './layout/advantages';
 @import './layout/footer';
 @import './pages/portfolio';
+@import './components/filter';
+@import './components/portf-content';
 @import './units/plaseholders';
 
 

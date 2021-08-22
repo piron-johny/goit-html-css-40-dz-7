@@ -11,10 +11,11 @@
 
 .footer__social-title,
 .footer__form-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.14;
-  color: $colorText;
+  @include fonts($colorText, null, 16px, 700, 1.14, null);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.14;
+  // color: $colorText;
   text-transform: uppercase;
   margin-bottom: 20px;
 }

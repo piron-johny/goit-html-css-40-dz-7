@@ -6,7 +6,6 @@
 }
 .work__title {
   @extend %title__section;
-  margin-bottom: 50px;
 }
 .work__list {
   display: flex;
@@ -26,12 +25,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    
+    @include fonts($colorText, null, 14px, 700, 1.14, null);
+    // color: $colorText;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
     text-transform: uppercase;
-    color: $colorText;
+
   
     width: 370px;
     height: 70px;

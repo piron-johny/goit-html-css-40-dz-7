@@ -1,7 +1,7 @@
 /* --- first-screen */
 
 .first-screen {
-  background-color: var(--sectionBg);
+  background-color: $sectionBg;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -23,16 +23,17 @@
   width: 696px;
 }
 .first-screen__title {
-  color: $colorText;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include fonts($colorText, null, 44px, 900, 1.36, 0.06);
+  // color: $colorText;
+  // font-size: 44px;
+  // font-weight: 900;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
   text-transform: uppercase;
 
   margin-bottom: 30px;
 }
 .first-screen__btn {
-  @extend %btn;
+  @include btn();
   padding: 10px 32px;
 }

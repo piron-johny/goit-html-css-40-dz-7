@@ -454,7 +454,7 @@
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link">
-                <svg class="social-list__icon" class="social__icon" width="20" height="20">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./img/sprites2.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -504,6 +504,8 @@
       <div class="modal">
         <button data-modal-close type="button" class="close"></button>
         <strong>Оставьте свои данные, мы вам перезвоним</strong>
+
+        <!-- form-modal -->
         <form action="#" class="form-modal">
           <label class="form-modal__label">
             <span>Имя</span>
@@ -512,7 +514,6 @@
               <use href="./img/sprites2.svg#icon-name"></use>
             </svg>
           </label>
-
 
           <label class="form-modal__label">
             <span>Телефон</span>
@@ -537,7 +538,10 @@
 
           <div class="form-modal__field">
             <input type="checkbox" class="form-modal__checkbox" id="checkbox">
-            <label for="checkbox" class="form-modal__label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            <label for="checkbox" class="form-modal__label">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="form-modal__contract">Условия договора</a>
+            </label>
           </div>
 
           <button type="submit" class="form-modal__btn btn">Отправить</button></form>
