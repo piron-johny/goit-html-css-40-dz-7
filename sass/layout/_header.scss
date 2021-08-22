@@ -1,9 +1,6 @@
 /* Шапка сайта */
 .header {
   @include fonts(null, null, null, 500, 1.14, 0.02em);
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
   .container {
     display: flex;
   } 

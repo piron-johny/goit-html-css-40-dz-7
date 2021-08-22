@@ -367,12 +367,12 @@ ul {
 }
 
 body {
-  margin: 0;
   color: #212121;
   font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 img {
@@ -553,8 +553,9 @@ img {
   left: 50%;
   padding: 40px;
   width: 528px;
-  height: 581px;
   background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -562,6 +563,15 @@ img {
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal strong {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .is-hidden {
@@ -698,12 +708,12 @@ img {
 
 .form-footer__btn {
   color: #ffffff;
-  background-color: #2196f3;
   font-size: 16px;
-  line-height: 1.9;
   font-weight: 700;
+  line-height: 1.9;
+  background-color: #2196f3;
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -718,6 +728,7 @@ img {
 .form-footer__btn:hover, .form-footer__btn:focus {
   color: #2196f3;
   background-color: #f5f4fa;
+  border: 1px solid #2196f3;
 }
 
 .form-footer__icon {
@@ -734,15 +745,6 @@ img {
 }
 
 /* --- form-modal */
-.modal strong {
-  color: #757575;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.15;
-  display: block;
-  margin-bottom: 12px;
-}
-
 .form-modal__label {
   position: relative;
   display: block;
@@ -751,7 +753,7 @@ img {
   line-height: 1.17;
 }
 
-.form-modal__labell:not(:last-child) {
+.form-modal__label:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -788,7 +790,7 @@ img {
 .icon-phone,
 .icon-mail {
   position: absolute;
-  top: calc(50% + 4px);
+  top: calc(50% + 6px);
   left: 15px;
   -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -874,7 +876,6 @@ img {
 .form-modal__label {
   font-size: 14px;
   line-height: 1.7;
-  margin-left: 8px;
 }
 
 .form-modal__label:last-child:before {
@@ -897,12 +898,12 @@ img {
 
 .form-modal__btn {
   color: #ffffff;
-  background-color: #2196f3;
   font-size: 16px;
-  line-height: 1.9;
   font-weight: 700;
+  line-height: 1.9;
+  background-color: #2196f3;
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -921,6 +922,11 @@ img {
 .form-modal__btn:hover, .form-modal__btn:focus {
   color: #2196f3;
   background-color: #f5f4fa;
+  border: 1px solid #2196f3;
+}
+
+.form-modal__btn hover {
+  border: 1px solid #2196f3;
 }
 
 .social-list {
@@ -1049,12 +1055,12 @@ img {
 
 .first-screen__btn {
   color: #ffffff;
-  background-color: #2196f3;
   font-size: 16px;
-  line-height: 1.9;
   font-weight: 700;
+  line-height: 1.9;
+  background-color: #2196f3;
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1068,6 +1074,7 @@ img {
 .first-screen__btn:hover, .first-screen__btn:focus {
   color: #2196f3;
   background-color: #f5f4fa;
+  border: 1px solid #2196f3;
 }
 
 /* --- advantages */
@@ -1362,12 +1369,12 @@ img {
 
 .filter-list__btn {
   color: #212121;
-  background-color: #f5f4fa;
   font-size: 16px;
-  line-height: 1.9;
   font-weight: 700;
+  line-height: 1.9;
+  background-color: #f5f4fa;
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1383,6 +1390,7 @@ img {
 .filter-list__btn:hover, .filter-list__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .filter-list__btn:hover, .filter-list__btn:focus {

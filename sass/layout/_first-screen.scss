@@ -24,13 +24,7 @@
 }
 .first-screen__title {
   @include fonts($colorText, null, 44px, 900, 1.36, 0.06);
-  // color: $colorText;
-  // font-size: 44px;
-  // font-weight: 900;
-  // line-height: 1.36;
-  // letter-spacing: 0.06em;
   text-transform: uppercase;
-
   margin-bottom: 30px;
 }
 .first-screen__btn {

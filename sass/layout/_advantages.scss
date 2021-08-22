@@ -32,9 +32,6 @@
 
 .advantages__subtitle {
   @include fonts($primaryColor, null, null, 700, 1.14, null);
-  // color: $primaryColor;
-  // font-weight: 700;
-  // line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }

@@ -6,17 +6,13 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
 @mixin btn($col: $colorText, $bg-c: $activeColor, $f-col: $activeColor, $f-bg-c: $btnBg) {
-  // color: $colorText;
-  color: $col;
-  // background-color: $activeColor;
+  @include fonts($col, null, 16px, 700, 1.9, null);
   background-color: $bg-c;
-  font-size: 16px;
-  line-height: 1.9;
-  font-weight: 700;
 
   border-radius: 4px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -25,10 +21,9 @@
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    // color: $activeColor;
-    // background-color: $btnBg;
     color: $f-col;
     background-color: $f-bg-c;
+    border: 1px solid $activeColor;
   }
 
 }

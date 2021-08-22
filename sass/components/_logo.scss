@@ -3,12 +3,6 @@
 .logo {
   @extend %link;
   @include fonts(#000000, Raleway, 26px, 700, 1.2, null);
-  // color: #000000;
-  // font-family: Raleway;
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.2;
-
   margin-right: 93px;
   padding: 24px 0px;
   & span {

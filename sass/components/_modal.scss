@@ -11,14 +11,15 @@
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
   width: 528px;
-  height: 581px;
   background-color: $colorText;
+  box-sizing: border-box;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -26,7 +27,13 @@
   transform: translate(-50%, -50%);
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  & strong {
+    @include fonts($primaryColor, null, 20px, 700, 1.15, null);
+    display: block;
+    margin-bottom: 12px;
+  }
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -74,38 +81,7 @@
     transform: rotate(45deg);
   }
 }
-// .close:hover::after,
-// .close:focus::after,
-// .close:hover::before,
-// .close:focus::before {
-//   background: $activeColor;
-// }
-// .close:hover::after,
-// .close:focus::after {
-//   transform: rotate(-225deg);
-// }
-// .close:hover::before,
-// .close:focus::before {
-//   transform: rotate(225deg);
-// }
-// .close::after,
-// .close::before {
-//   content: "";
-//   position: absolute;
-//   top: 14px;
-//   left: 8px;
 
-//   height: 1px;
-//   width: 13px;
-//   background: #000;
-//   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .close::after {
-//   transform: rotate(-45deg);
-// }
-// .close::before {
-//   transform: rotate(45deg);
-// }
 .no-scroll {
   overflow: hidden;
 }

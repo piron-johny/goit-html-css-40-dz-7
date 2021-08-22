@@ -4,16 +4,20 @@
   padding-top: 47px;
   padding-bottom: 94px;
 }
+
 .work__title {
   @extend %title__section;
 }
+
 .work__list {
   display: flex;
   margin: -15px;
 }
+
 .work__item {
   margin: 15px;
 }
+
 .work__wrapper {
   position: relative;
   width: 100%;
@@ -27,13 +31,7 @@
     align-items: center;
     
     @include fonts($colorText, null, 14px, 700, 1.14, null);
-    // color: $colorText;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
     text-transform: uppercase;
-
-  
     width: 370px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);

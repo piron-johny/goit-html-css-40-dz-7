@@ -4,13 +4,16 @@
   background-color: $btnBg;
   padding: 94px 0px;
 }
+
 .team__title {
   @extend %title__section;
 }
+
 .team__list {
   display: flex;
   margin: -15px;
 }
+
 .team__item {
   text-align: center;
   margin: 15px;
@@ -18,22 +21,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team__wrapper {
   padding: 30px 32px;
   background-color: $colorText;
 }
+
 .team__subtitle {
   @include fonts(null, null, 16px, 500, 1.19, null);
-  // font-size: 16px;
-  // line-height: 1.19;
-  // font-weight: 500;
   margin-bottom: 10px;
 }
+
 .team__text {
   @include fonts($secondaryColor, null, 16px, null, 1.2, null);
-  // color: $secondaryColor;
-  // font-size: 16px;
-  // line-height: 1.2;
   margin-bottom: 16px;
 }
 
