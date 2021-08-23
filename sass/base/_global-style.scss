@@ -9,13 +9,3 @@ img {
   height: auto;
   display: block;
 }
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  .footer & {
-    display: flex;
-    align-items: baseline;
-  }
-}

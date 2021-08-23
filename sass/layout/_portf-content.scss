@@ -81,7 +81,7 @@
 }
 
 .content-list__tittle {
-  @include fonts($secondaryColor, null, 18px, null, 2, 0.06em,);
+  @include fonts($primaryColor, null, 18px, null, 2, 0.06em,);
 }
 
 .content-list__text {

@@ -1,15 +1,14 @@
 
 @import './units/variables';
 @import './units/mixin';
-@import './base/normalize';
 @import './base/null';
 @import './base/global-style';
+@import './base/container';
 @import './components/logo';
 @import './components/navigation';
 @import './components/contacts';
 @import './components/modal';
 @import './components/form';
-@import './components/btn';
 @import './components/social-list';
 @import './components/address';
 @import './layout/header';
@@ -22,7 +21,7 @@
 @import './layout/footer';
 @import './pages/portfolio';
 @import './components/filter';
-@import './components/portf-content';
+@import './layout/portf-content';
 @import './units/plaseholders';
 
 

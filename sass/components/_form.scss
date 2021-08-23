@@ -42,7 +42,8 @@
 .form-footer__btn {
   @include btn();
   margin-left: 12px;
-  padding: 12px 29px;
+  padding: 9px 29px;
+  letter-spacing: 0.06em;
 }
 
 .form-footer__icon {
